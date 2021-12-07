@@ -28,7 +28,7 @@ try:
 		else:
 			flag = 0
 
-        # camera.py 의 Rec() [녹화] , sorting 의 gettoday()/foldername()/So() 
+      	 	# camera.py 의 Rec() [녹화] , sorting 의 gettoday()/foldername()/So() 
 		# [대충 날짜대로 폴더 만들고 폴더안에 날짜적힌 동영상 파일이 저장되는 클래스]
 		if flag >= 3:
 			camera.Rec()

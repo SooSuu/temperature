@@ -6,5 +6,4 @@ with con:
     cur =con.cursor()
     cur.execute("DROP TABLE IF EXISTS Shelf_life")
     cur.execute("CREATE TABLE Shelf_life(timestamp DATE,name TEXT ,shelf DATE)")
-    cur.execute("DROP TABLE IF EXISTS Shelf_made")
-    cur.execute("CREATE TABLE Shelf_made(timestamp DATE,name TEXT ,shelf DATE)")
+

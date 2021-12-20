@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/style.css">
+  <link 
+    href="link" rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/clock.css" />
+  <title>Nav</title>
+  <script
+    src="https://kit.fontawesome.com/2d323a629b.js"
+    crossorigin="temperature-low"
+  ></script>
+  <script src="../static/main.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <i class="fas fa-temperature-low"></i>
+      <a href="/">Temperature</a>
+    </div>
+
+    <ul class="navbar__menu">
+      <li><a href="/graph">Graph</a></li>
+      <li><a href="/alarm">Alarm</a></li>
+      <li><a href="/camera">Camera</a></li>
+      <li><a href="/info">Info</a></li>
+    </ul>
+
+    <ul class="navbar__clock">
+      <script src="../static/clock.js"></script>
+    </ul>
+
+    <a href="#" class="navbar__toogle">
+      <i class="fas fa-bars"></i>
+    </a>
+      
+  </nav>
+  <center>
+  <h1> 실시간 카메라 </h1>
+  <h3><img src="{{ url_for('video_feed') }}" width="80%"></h3>
+  </center>
+</body>
+</html>
